@@ -23,7 +23,7 @@ function sumFibs(num) {
     var oddFib = fib.filter(val => {return val % 2 !== 0});
 
     // sum odd fibonacci numbers in the array
-    // The reduce method takes two arguments: a callback function and an initial value. Here the callback function takes two arguments: total and num. The initial value is 0. 
+    // The reduce method takes two arguments: a callback function and an initial value. Here the callback function takes two arguments: an accumulator(total) and the current value (num). The initial value is 0. 
     var sum = oddFib.reduce(function(total, num) {return total + num;}, 0)
 
   return sum;
